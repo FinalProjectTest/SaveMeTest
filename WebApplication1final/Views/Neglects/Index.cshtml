@@ -1,0 +1,93 @@
+﻿@model IEnumerable<WebApplication1final.Models.Neglect>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Food)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Shelter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Abandoned)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Poison)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Underweight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trapping)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Water)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Shot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Injury)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Abuse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Other)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Food)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Shelter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Abandoned)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Poison)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Underweight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trapping)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Water)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Shot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Injury)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Abuse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Other)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

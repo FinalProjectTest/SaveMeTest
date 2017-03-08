@@ -1,0 +1,106 @@
+﻿@model WebApplication1final.Models.Neglect
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Neglect</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Food)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Food)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shelter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shelter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Abandoned)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Abandoned)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Poison)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Poison)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Underweight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Underweight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trapping)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trapping)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Water)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Water)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shot)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shot)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Injury)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Injury)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Abuse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Abuse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Other)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Other)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
